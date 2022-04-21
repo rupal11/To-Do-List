@@ -5,4 +5,6 @@
 - User can insert and delete am item.
 - Used **HTML, CSS, JavaScript, EJS** to implement front-end
 
-[I'm an inline-style link](https://www.google.com)
+[Go to website](https://todolist01-nottaken.herokuapp.com/).
+
+![Hompage](images/todo-list.jpg)
