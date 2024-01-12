@@ -16,7 +16,12 @@ app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-mongoose.connect(process.env.DATABASE, {useNewUrlParser:true, useUnifiedTopology: true});
+const password = encodeURIComponent(process.env.PASSWORD);
+const databaseUrl="mongodb+srv://admin-rupal:"+ password + "@cluster0.ydf5s.mongodb.net/todoListDB";
+
+
+mongoose.connect(databaseUrl, {useNewUrlParser: true, useUnifiedTopology: true});
+
 
 const itemsSchema={
   name : String
